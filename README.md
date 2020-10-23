@@ -1,5 +1,14 @@
-## Personal Blog
+## Hugo Blog
 
-tech parts: SpringBoot, Java, Play, Scala, Redis, Go
+topics: Java, Scala, SpringBoot, SpringCloud, AKKA, Docker, k8s, DDD
+
+## How to publish
+
+```bash
+$ hugo new posts/java-concurrent/jc1-basic-concept.md
+
+$ hugo
+
+$ 
 
 

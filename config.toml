@@ -17,7 +17,7 @@ googleAnalytics = "UA-168735975-1"
 
 [params]
     author = "Daniel Guo"
-    info = "Full Stack Developer"
+    info = "I'm a developer"
     description = "Daniel Guo's tech blog"
     keywords = "blog,developer,Java,Docker,Redis,Scala,SpringBoot"
     avatarurl = "images/avatar.png"
@@ -78,3 +78,4 @@ googleAnalytics = "UA-168735975-1"
     noClasses = true
     style = "dracula"
     tabWidth = 2
+
