@@ -16,7 +16,7 @@ CountDownLatch countDownLatch = new CountDownLatch(10);
 注意：
 
 - 线程调用`countdown()`后，并不会阻塞，而是会继续执行
-- 线程调用`await()`后会一直阻塞指导计数器的值为0，或者线程被中断
+- 线程调用`await()`后会一直阻塞直到计数器的值为0，或者线程被中断
 - `CountDownLatch`不能复用
 
 实现：

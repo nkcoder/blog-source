@@ -12,6 +12,6 @@ $ hugo new posts/java-concurrent/jc1-basic-concept.md
 $ hugo server
 
 ## deploy to github
-$ ./deploy.sh
+$ ./deploy.sh 'optional commit message'
 
 

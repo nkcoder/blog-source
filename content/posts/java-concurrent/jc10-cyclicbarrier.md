@@ -36,5 +36,5 @@ CyclicBarrier cyclicBarrier = new CyclicBarrier(10, action);
 
 - 使用两个变量parties和count保存barrier关联的线程数量，parties用于barrier重复利用时重置线程数，而count用于记录到达barrier的线程的数量，当线程调用`await()`时，count的值递减，当count的值为0时，表示barrier完成，
 - 线程调用`await()`，需要加锁，使用`ReentrantLock`实现。count递减，并判断是否为0：
-  - 如果此时count为0，首先如果Runnable不为空，则在当前线程中执行。然后开始新的barrier循环（先将所有等待的线程唤醒，然后使用parties重置count。
+  - 如果此时count为0，首先如果Runnable不为空，则在当前线程中执行。然后开始新的barrier循环（先将所有等待的线程唤醒，然后使用parties重置count。）
   - 如果count不为0，当前线程等待。
