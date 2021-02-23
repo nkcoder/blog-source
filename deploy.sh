@@ -22,4 +22,12 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push origin master
+git push origin main 
+
+####################################################################3
+
+# commit content
+cd ..
+git add .
+git commit -m "$msg"
+git push -u origin main
