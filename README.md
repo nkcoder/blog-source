@@ -1,6 +1,6 @@
-## Hugo Blog
+## Hugo blog
 
-topics: Java, Scala, SpringBoot, SpringCloud, AKKA, Docker, k8s, DDD
+- topics: Java, Scala, SpringBoot, SpringCloud, AKKA, Docker, k8s, DDD, Go
 
 ## How to publish
 
@@ -8,10 +8,18 @@ topics: Java, Scala, SpringBoot, SpringCloud, AKKA, Docker, k8s, DDD
 ## create new posts
 $ hugo new posts/java-concurrent/jc1-basic-concept.md
 
+## build
+$ hugo
+
 ## local preview
 $ hugo server
 
 ## deploy to github
 $ ./deploy.sh 'optional commit message'
+```
 
-
+> Hugo与Github Pages托管
+ 
+1. blog_source的main分支对应git@github.com:nkcoder/blog-source.git的main分支
+2. 运行`hugo`构建命令后，会生成/更新`public`目录，即博客的静态内容。public目录中的内容对应的是github pages仓库，即git@github.com:nkcoder/nkcoder.github.io.git的main分支。
+3. 将blog_source目录和public目录下的内容分别推送到各自的远程仓库即可。
