@@ -2,7 +2,6 @@
 title: Intellij Idea在VIM模式下，Shift+方向键无法选中
 date: 2020-02-19T23:20:51+08:00
 tags:
-- intellij idea
 - vim
 draft: false
 ---
