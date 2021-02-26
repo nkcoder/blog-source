@@ -14,11 +14,12 @@ git add .
 
 # Commit changes.
 msg="rebuilding site $(date)"
-if [ -n "$*" ]; then
-	msg="$*"
+if [ $# -ne 1 ]; then
+  echo "commit message is required"
+  exit 1
 fi
 
-git commit -m "$msg"
+git commit -m "$1"
 git push
 
 printf "\033[0;32mDeploying updates to GitHub done.\033[0m\n"
