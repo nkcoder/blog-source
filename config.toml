@@ -1,4 +1,4 @@
-baseurl = "http://blog.freeimmi.com/"
+baseurl = "https://blog.freeimmi.com/"
 title = "Just Coding"
 theme = "hugo-coder"
 languagecode = "en"
