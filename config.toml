@@ -42,15 +42,10 @@ googleAnalytics = "UA-168735975-1"
     weight = 1
     url = "https://github.com/nkcoder/"
 [[params.social]]
-    name = "Gitlab"
+    name = "StackOverflow"
     icon = "fab fa-stack-overflow fa-2x"
     weight = 2
     url = "https://stackoverflow.com/users/2695077/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/no/"
 
 # Menu links
 [[menu.main]]
