@@ -1,4 +1,4 @@
-baseurl = "https://blog.freeimmi.com/"
+baseurl = "https://nkcoder.github.io/"
 title = "Just Coding"
 theme = "hugo-coder"
 languagecode = "en"
