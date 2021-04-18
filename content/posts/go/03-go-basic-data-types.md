@@ -1,6 +1,6 @@
 ---
 title: Go的基本数据类型
-date: 2021-02-26T13:26:16+08:00
+date: 2021-04-18T22:36:16+08:00
 categories:
 - Go程序设计
 draft: false
