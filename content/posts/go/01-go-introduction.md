@@ -2,7 +2,7 @@
 title: Go语言入门
 date: 2021-02-23T20:28:08+08:00
 categories:
-- go
+- Go程序设计
 draft: false
 ---
 

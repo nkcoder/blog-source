@@ -2,7 +2,7 @@
 title: Go的程序结构
 date: 2021-02-26T09:46:31+08:00
 categories:
-- go
+- Go程序设计
 draft: false
 ---
 
