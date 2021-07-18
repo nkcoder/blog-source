@@ -1,10 +1,6 @@
-[submodule "themes/minimal-bootstrap-hugo-theme"]
-	path = themes/minimal-bootstrap-hugo-theme
-	url = https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git
-[submodule "public"]
-	path = public
-	url = git@github.com:nkcoder/nkcoder.github.io.git
-	branch = master
 [submodule "themes/hugo-coder"]
 	path = themes/hugo-coder
 	url = https://github.com/luizdepra/hugo-coder.git
+[submodule "public"]
+	path = public
+	url = git@github.com:nkcoder/nkcoder.github.io.git
