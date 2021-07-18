@@ -35,3 +35,18 @@ $ ./deploy.sh 'optional commit message'
 3. Push `blog-source` and `public` to corresponding remote repo.
 
 4. The script `deploy.sh` is a one-touch command.
+
+## Migrate to new computer
+
+```bash
+$ git clone git@github.com:nkcoder/blog-source.git
+$ cd blog-source
+$ hugo
+$ hugo server
+$ cd public
+$ git init
+$ git add origin git@github.com:nkcoder/nkcoder.github.io.git
+$ git push -u origin main
+```
+
+- [Build a Personal Website With Github Pages and Hugo](https://levelup.gitconnected.com/build-a-personal-website-with-github-pages-and-hugo-6c68592204c7)
