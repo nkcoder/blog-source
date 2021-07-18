@@ -3,10 +3,26 @@
 # If a command fails then the deploy stops
 set -e
 
-printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
+if [ $# -ne 1 ]; then
+  echo "commit message is required"
+  exit 1
+fi
+
+printf "Deploying updates to GitHub...\n"
+
+####################################################################3
+
+printf "Deploying blog source to GitHub...\n"
+# commit blg source
+git add .
+git commit -m "$1"
+git push 
+printf "Deploying blog source to GitHub done.\n"
+
+####################################################################3
 
 # Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo 
 
 # Go To Public folder
 cd public
@@ -14,22 +30,9 @@ git add .
 
 # Commit changes.
 msg="rebuilding site $(date)"
-if [ $# -ne 1 ]; then
-  echo "commit message is required"
-  exit 1
-fi
 
-git commit -m "$1"
+git commit -m "$msg"
 git push
 
-printf "\033[0;32mDeploying updates to GitHub done.\033[0m\n"
+printf "Deploying updates to GitHub done.\n"
 
-####################################################################3
-
-printf "\033[0;32mDeploying blog source to GitHub...\033[0m\n"
-# commit blg source
-cd ..
-git add .
-git commit -m "$msg"
-git push 
-printf "\033[0;32mDeploying blog source to GitHub done.\033[0m\n"
