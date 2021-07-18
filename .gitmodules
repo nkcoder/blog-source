@@ -3,7 +3,7 @@
 	url = https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git
 [submodule "public"]
 	path = public
-	url = https://github.com/nkcoder/nkcoder.github.io.git
+	url = git@github.com:nkcoder/nkcoder.github.io.git
 	branch = master
 [submodule "themes/hugo-coder"]
 	path = themes/hugo-coder
